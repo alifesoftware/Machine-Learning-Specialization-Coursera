@@ -1,0 +1,50 @@
+Install Jupyter using the commands below:
+
+Link: https://jupyter.org/install
+
+pip install jupyterlab (or pip3)
+pip install notebook (or pip3)
+pip install voila (or pip3)
+
+Test:
+jupyter lab
+jupyter notebook
+voila
+
+
+Or you can use Homebrew on macOS
+
+brew install jupyterlab
+
+
+
+
+How to Configure Jupyter:
+
+Additional kernels can be installed into the shared jupyter directory
+  /usr/local/etc/jupyter
+
+Bash completion has been installed to:
+  /usr/local/etc/bash_completion.d
+
+To start jupyterlab now and restart at login:
+  brew services start jupyterlab
+Or, if you don't want/need a background service you can just run:
+  /usr/local/opt/jupyterlab/bin/jupyter-lab
+==> guile
+Guile libraries can now be installed here:
+    Source files: /usr/local/share/guile/site/3.0
+  Compiled files: /usr/local/lib/guile/3.0/site-ccache
+      Extensions: /usr/local/lib/guile/3.0/extensions
+
+Add the following to your .bashrc or equivalent:
+  export GUILE_LOAD_PATH="/usr/local/share/guile/site/3.0"
+  export GUILE_LOAD_COMPILED_PATH="/usr/local/lib/guile/3.0/site-ccache"
+  export GUILE_SYSTEM_EXTENSIONS_PATH="/usr/local/lib/guile/3.0/extensions"
+  
+  
+  
+
+How to run Jupyter
+
+http://localhost:8889/lab
